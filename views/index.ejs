@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to the Cat Dashboard</h1>
+    <h3>Below are all of our cats!</h3>
+
+    <% if (cats !== undefined) {%>
+        <% for (let cat of cats) {%>
+            <a href="/cats/<%=cat._id %>"</a><%= cat.name %></a><br>
+        <%}%>
+    <%}%>
+    <a href="/cats/new">Add a new cat!</a>
+</body>
+</html>

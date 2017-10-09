@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add a new Cat!!</h1>
+
+    <form action="/cats/<%=cat._id%>" method="post">
+        <label for="name">Name: <input type="text" name="name" value="<%=cat.name%>"></label>
+        <label for="age">Age: <input type="text" name="age" value="<%=cat.age%>"></label>
+        <label for="color">Color: <input type="text" name="color" value="<%=cat.color%>"></label>
+        <button type="submit">Add Cat!</button>
+    </form>
+</body>
+</html>
